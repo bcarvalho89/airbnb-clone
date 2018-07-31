@@ -23,7 +23,7 @@ class Property extends Model {
   }
 
   images() {
-    this.hasMany('App/Models/Image');
+    return this.hasMany('App/Models/Image');
   }
 }
 
