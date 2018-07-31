@@ -1,5 +1,7 @@
 'use strict'
 
+const Property = use('App/Models/Property');
+
 /**
  * Resourceful controller for interacting with properties
  */
@@ -9,13 +11,9 @@ class PropertyController {
    * GET properties
    */
   async index ({ request, response, view }) {
-  }
+    const properties = Property.all();
 
-  /**
-   * Render a form to be used for creating a new property.
-   * GET properties/create
-   */
-  async create ({ request, response, view }) {
+    return properties;
   }
 
   /**
@@ -30,13 +28,15 @@ class PropertyController {
    * GET properties/:id
    */
   async show ({ params, request, response, view }) {
-  }
+    const property = await Property.find(params.id);
 
-  /**
-   * Render a form to update an existing property.
-   * GET properties/:id/edit
-   */
-  async edit ({ params, request, response, view }) {
+    if (!property) {
+      return response.status(404).json({ message: 'Property not found' });
+    }
+
+    await property.load('images');
+
+    return response.json(property);
   }
 
   /**
@@ -50,7 +50,18 @@ class PropertyController {
    * Delete a property with id.
    * DELETE properties/:id
    */
-  async destroy ({ params, request, response }) {
+  async destroy ({ params, request, response, auth }) {
+    const property = await Property.find(params.id);
+
+    if (!property) {
+      return response.status(404).json({ message: 'Property not found' });
+    }
+
+    if (property.user_id !== auth.user.id) {
+      return response.status(401).send({ message: 'Not authorized' });
+    }
+
+    await property.delete();
   }
 }
 
