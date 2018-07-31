@@ -11,7 +11,11 @@ class PropertyController {
    * GET properties
    */
   async index ({ request, response, view }) {
-    const properties = Property.all();
+    const { latitude, longitude } = request.all();
+
+    const properties = Property.query()
+      .nearBy(latitude, longitude, 10)
+      .fetch();
 
     return properties;
   }
@@ -20,7 +24,18 @@ class PropertyController {
    * Create/save a new property.
    * POST properties
    */
-  async store ({ request, response }) {
+  async store ({ request, response, auth }) {
+    const { id } = auth.user;
+    const data = request.only([
+      'title',
+      'address',
+      'latitude',
+      'longitude',
+      'price'
+    ]);
+    const property = await Property.create({ ...data, user_id: id});
+
+    return property;
   }
 
   /**
@@ -43,7 +58,28 @@ class PropertyController {
    * Update property details.
    * PUT or PATCH properties/:id
    */
-  async update ({ params, request, response }) {
+  async update ({ params, request, response, auth }) {
+    const property = await Property.find(params.id);
+    const data = request.only([
+      'title',
+      'address',
+      'latitude',
+      'longitude',
+      'price'
+    ]);
+
+    if (!property) {
+      return response.status(404).json({ message: 'Property not found' });
+    }
+
+    if (property.user_id !== auth.user.id) {
+      return response.status(401).send({ message: 'Not authorized' });
+    }
+
+    property.merge(data);
+    await property.save();
+
+    return property;
   }
 
   /**
