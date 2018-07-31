@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { StatusBar, AsyncStorage }  from 'react-native';
 import { StackActions, NavigationActions } from 'react-navigation';
 
+import { isLogged } from '../../helpers';
 import api from '../../services/api';
 
 import {
@@ -16,6 +17,15 @@ import {
   SignUpLink,
   SignUpLinkText
 } from './styles';
+
+const resetAction = StackActions.reset({
+  index: 0,
+  actions: [
+    NavigationActions.navigate({
+      routeName: 'Main'
+    })
+  ]
+});
 
 export default class SignIn extends Component {
 
@@ -35,6 +45,12 @@ export default class SignIn extends Component {
     password: '',
     error: ''
   };
+
+  componentWillMount() {
+    if (isLogged()) {
+      this.props.navigation.dispatch(resetAction);
+    }
+  }
 
   handleEmailChange = (email) => {
     this.setState({ email });
@@ -62,15 +78,6 @@ export default class SignIn extends Component {
 
         await AsyncStorage.setItem('@AirbnbApp:token', response.data.token);
 
-        const resetAction = StackActions.reset({
-          index: 0,
-          actions: [
-            NavigationActions.navigate({
-              routeName: 'Main'
-            })
-          ]
-        });
-
         this.props.navigation.dispatch(resetAction);
       } catch (err) {
         this.setState({
@@ -80,7 +87,7 @@ export default class SignIn extends Component {
     }
   }
 
-  render() {
+  render() {    
     return (
       <Container>
         <StatusBar hidden />
@@ -101,4 +108,5 @@ export default class SignIn extends Component {
       </Container>
     )
   }
+
 }
