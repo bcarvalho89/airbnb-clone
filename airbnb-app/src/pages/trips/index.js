@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
+import { Container } from '../../helpers/theme';
+
 class TripsTab extends Component {
   constructor(props) {
     super(props);
@@ -10,9 +12,9 @@ class TripsTab extends Component {
 
   render() {
     return (
-      <View>
+      <Container>
         <Text> TripsTab </Text>
-      </View>
+      </Container>
     );
   }
 }
