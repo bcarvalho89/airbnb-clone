@@ -6,8 +6,9 @@ import { StatusBar } from 'react-native';
 import api from '../../services/api';
 import { StackActions, NavigationActions } from 'react-navigation';
 
+import { Container } from '../../helpers/theme';
+
 import {
-  Container,
   Logo,
   SuccessMessage,
   Input,
@@ -89,7 +90,7 @@ export default class SignUp extends Component {
     return (
       <Container>
         <StatusBar hidden />
-        <Logo source={require('../../images/airbnb_logo.png')} resizeMode="contain" />
+        <Logo source={require('../../images/airbnb_logo-color.png')} resizeMode="contain" />
 
         {this.state.success.length !== 0 &&
           <SuccessMessage>{this.state.success}</SuccessMessage>

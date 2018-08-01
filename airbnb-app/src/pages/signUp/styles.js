@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-const Container = styled.View`
-  flex: 1;
-  alignItems: center;
-  justifyContent: center;
-  backgroundColor: #f5f5f5;
-`;
-
 const Logo = styled.Image`
   height: 30%;
   marginBottom: 40px;
@@ -68,7 +61,6 @@ const SignInLinkText = styled.Text`
 `;
 
 export {
-  Container,
   Logo,
   SuccessMessage,
   Input,

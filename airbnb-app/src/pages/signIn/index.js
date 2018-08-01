@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { StatusBar, AsyncStorage }  from 'react-native';
-import { StackActions, NavigationActions } from 'react-navigation';
+import { NavigationActions } from 'react-navigation';
 
-import { isLogged } from '../../helpers';
-import api from '../../services/api';
+import { Container } from '../../helpers/theme';
 
 import {
-  Container,
   Button,
   ButtonText,
   ErrorMessage,
@@ -18,13 +16,10 @@ import {
   SignUpLinkText
 } from './styles';
 
-const resetAction = StackActions.reset({
-  index: 0,
-  actions: [
-    NavigationActions.navigate({
-      routeName: 'Main'
-    })
-  ]
+import api from '../../services/api';
+
+const goToApp = NavigationActions.navigate({
+  routeName: 'Explore'
 });
 
 export default class SignIn extends Component {
@@ -45,12 +40,6 @@ export default class SignIn extends Component {
     password: '',
     error: ''
   };
-
-  componentWillMount() {
-    if (isLogged()) {
-      this.props.navigation.dispatch(resetAction);
-    }
-  }
 
   handleEmailChange = (email) => {
     this.setState({ email });
@@ -78,7 +67,7 @@ export default class SignIn extends Component {
 
         await AsyncStorage.setItem('@AirbnbApp:token', response.data.token);
 
-        this.props.navigation.dispatch(resetAction);
+        this.props.navigation.dispatch(goToApp);
       } catch (err) {
         this.setState({
           error: 'Houve um problema ao efetuar o login. Verifique os dados inseridos e tente novamente.'
@@ -91,7 +80,7 @@ export default class SignIn extends Component {
     return (
       <Container>
         <StatusBar hidden />
-        <Logo source={require('../../images/airbnb_logo.png')} resizeMode="contain" />
+        <Logo source={require('../../images/airbnb_logo-color.png')} resizeMode="contain" />
         <Input placeholder="Endereço de e-mail" value={this.state.email} onChangeText={this.handleEmailChange} autoCapitalize="none" autoCorrect={false} />
         <Input placeholder="Senha" value={this.state.password} onChangeText={this.handlePasswordChange} autoCapitalize="none" autoCorrect={false} secureTextEntry />
 
