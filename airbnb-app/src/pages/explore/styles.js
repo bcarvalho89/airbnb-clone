@@ -16,13 +16,13 @@ const SearchHeaderGroup = styled.View`
   justify-content: center;
   flex-direction: row;
   padding-horizontal: 20;
-  padding-vertical: 10;
+  padding-vertical: 5;
   background-color: #fff;
-  margin-horizontal: 30;
+  margin-horizontal: 20;
   shadow-offset: 0 0;
   shadow-color: #000;
   shadow-opacity: 0.2;
-  elevation: 3;
+  elevation: 2;
   border-radius: 5;
   margin-top: ${props => props.offetTop};
 `;
@@ -38,9 +38,28 @@ const SearchHeaderInput = styled.TextInput`
   height: 40;
 `;
 
+const HelpFindWrapper = styled.View`
+  flex: 1;
+  padding-top: 20;
+`;
+
+const HelpFindTitle = styled.Text`
+  font-size: 24;
+  font-weight: 700;
+  padding-horizontal: 20;
+`;
+
+const HelpFindCategoryWrapper = styled.View`
+  height: 135;
+  marginTop: 20;
+`;
+
 export {
   SearchHeader,
   SearchHeaderGroup,
   SearchHeaderIcon,
-  SearchHeaderInput
+  SearchHeaderInput,
+  HelpFindWrapper,
+  HelpFindTitle,
+  HelpFindCategoryWrapper
 };

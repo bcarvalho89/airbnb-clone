@@ -3,14 +3,21 @@ import {
   SafeAreaView,
   View,
   Platform,
-  StatusBar
+  StatusBar,
+  ScrollView,
+  Text
 } from 'react-native';
+
+import Category from '../../components/explore/Category';
 
 import {
   SearchHeader,
   SearchHeaderGroup,
   SearchHeaderIcon,
-  SearchHeaderInput
+  SearchHeaderInput,
+  HelpFindWrapper,
+  HelpFindTitle,
+  HelpFindCategoryWrapper
 } from './styles';
 
 class ExploreTab extends Component {
@@ -30,14 +37,26 @@ class ExploreTab extends Component {
 
   render() {
     return (
-      <SafeAreaView>
-        <View style={{ flex: 1 }}>
+      <SafeAreaView >
+        <View >
           <SearchHeader height={this.startHeaderHeight}>
             <SearchHeaderGroup offetTop={Platform.OS == 'android' ? 20 : null}>
-              <SearchHeaderIcon name="ios-search" size={20} />
-              <SearchHeaderInput underlineColorAndroid="transparent" placeholder="Try New Delhi" placeholderTextColor="grey" />
+              <SearchHeaderIcon name="ios-search" size={24} />
+              <SearchHeaderInput underlineColorAndroid="transparent" placeholder="Experimente &quot;Shanghai&quot;" placeholderTextColor="grey" />
             </SearchHeaderGroup>
           </SearchHeader>
+          <ScrollView scrollEventThrottle={16}>
+            <HelpFindWrapper>
+              <HelpFindTitle>O que podemos ajudar você a encontrar?</HelpFindTitle>
+              <HelpFindCategoryWrapper>
+                <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+                  <Category imageUri={require('../../images/home.jpg')} name="Acomodações" />
+                  <Category imageUri={require('../../images/experiences.jpg')} name="Experiências" />
+                  <Category imageUri={require('../../images/restaurant.jpg')} name="Restaurantes" />
+                </ScrollView>
+              </HelpFindCategoryWrapper>
+            </HelpFindWrapper>
+          </ScrollView>
         </View>
       </SafeAreaView>
     );
