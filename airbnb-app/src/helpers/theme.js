@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 const theme = {
   colors: {
-    activeTintColor: '#ff5a60',
-    inactiveTintColor: 'grey',
-    textColor: 'green',
+    activeTintColor: '#FF5A5F',
+    inactiveTintColor: '#484848',
+    textColor: '#484848',
+    fullStarColor: '#008489',
     defaultBackgroundColor: '#fff'
   }
 };

@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
+import { theme } from '../../helpers/theme';
+
 const SearchHeader = styled.View`
   height: ${props => props.height};
   background-color: #fff;
@@ -55,7 +57,7 @@ const HelpFindCategoryWrapper = styled.View`
 `;
 
 const AirbnbPlus = styled.View`
-  margin-vertical: 40;
+  margin-top: 40;
   padding-horizontal: 20
 `;
 
@@ -84,6 +86,25 @@ const AirbnbPlusImage = styled.Image`
   border-radius: 5;
 `;
 
+const PropertyListWrapper = styled.View`
+  margin-top:40
+`;
+
+const PropertyListTitle = styled.Text`
+  color: ${theme.colors.textColor};
+  font-size: 24;
+  font-weight: 700;
+  padding-horizontal: 20;
+`;
+
+const PropertyList = styled.View`
+  padding-horizontal: 20;
+  margin-top: 20;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between
+`;
+
 export {
   SearchHeader,
   SearchHeaderGroup,
@@ -96,5 +117,8 @@ export {
   AirbnbPlusTitle,
   AirbnbPlusParagraph,
   AirbnbPlusImageWrapper,
-  AirbnbPlusImage
+  AirbnbPlusImage,
+  PropertyListWrapper,
+  PropertyListTitle,
+  PropertyList
 };

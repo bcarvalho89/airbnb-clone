@@ -5,10 +5,13 @@ import {
   Platform,
   StatusBar,
   ScrollView,
-  Dimensions
+  Dimensions,
+  Image,
+  Text
 } from 'react-native';
 
 import Category from '../../components/explore/Category';
+import Property from '../../components/explore/Property';
 
 import {
   SearchHeader,
@@ -22,7 +25,10 @@ import {
   AirbnbPlusTitle,
   AirbnbPlusParagraph,
   AirbnbPlusImageWrapper,
-  AirbnbPlusImage
+  AirbnbPlusImage,
+  PropertyListWrapper,
+  PropertyListTitle,
+  PropertyList
 } from './styles';
 
 const { width } = Dimensions.get('window');
@@ -63,6 +69,7 @@ class ExploreTab extends Component {
                 </ScrollView>
               </HelpFindCategoryWrapper>
             </HelpFindWrapper>
+
             <AirbnbPlus>
               <AirbnbPlusTitle>Apresentando Airbnb Plus</AirbnbPlusTitle>
               <AirbnbPlusParagraph>Uma nova seleção de acomodações com conforto e qualidade verificados.</AirbnbPlusParagraph>
@@ -70,6 +77,16 @@ class ExploreTab extends Component {
                 <AirbnbPlusImage source={require('../../images/home.jpg')} />
               </AirbnbPlusImageWrapper>
             </AirbnbPlus>
+
+            <PropertyListWrapper>
+              <PropertyListTitle>Acomodações no mundo inteiro</PropertyListTitle>
+              <PropertyList>
+                <Property width={width} isFavorited={true} />
+                <Property width={width} isFavorited={false} />
+                <Property width={width} isFavorited={false} />
+                <Property width={width} isFavorited={true} />
+              </PropertyList>
+            </PropertyListWrapper>
           </ScrollView>
         </View>
       </SafeAreaView>
