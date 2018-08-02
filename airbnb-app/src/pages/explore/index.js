@@ -5,7 +5,7 @@ import {
   Platform,
   StatusBar,
   ScrollView,
-  Text
+  Dimensions
 } from 'react-native';
 
 import Category from '../../components/explore/Category';
@@ -17,8 +17,15 @@ import {
   SearchHeaderInput,
   HelpFindWrapper,
   HelpFindTitle,
-  HelpFindCategoryWrapper
+  HelpFindCategoryWrapper,
+  AirbnbPlus,
+  AirbnbPlusTitle,
+  AirbnbPlusParagraph,
+  AirbnbPlusImageWrapper,
+  AirbnbPlusImage
 } from './styles';
+
+const { width } = Dimensions.get('window');
 
 class ExploreTab extends Component {
   constructor(props) {
@@ -37,8 +44,8 @@ class ExploreTab extends Component {
 
   render() {
     return (
-      <SafeAreaView >
-        <View >
+      <SafeAreaView style={{ flex: 1}}>
+        <View style={{ flex: 1}}>
           <SearchHeader height={this.startHeaderHeight}>
             <SearchHeaderGroup offetTop={Platform.OS == 'android' ? 20 : null}>
               <SearchHeaderIcon name="ios-search" size={24} />
@@ -56,6 +63,13 @@ class ExploreTab extends Component {
                 </ScrollView>
               </HelpFindCategoryWrapper>
             </HelpFindWrapper>
+            <AirbnbPlus>
+              <AirbnbPlusTitle>Apresentando Airbnb Plus</AirbnbPlusTitle>
+              <AirbnbPlusParagraph>Uma nova seleção de acomodações com conforto e qualidade verificados.</AirbnbPlusParagraph>
+              <AirbnbPlusImageWrapper deviceWidth={width}>
+                <AirbnbPlusImage source={require('../../images/home.jpg')} />
+              </AirbnbPlusImageWrapper>
+            </AirbnbPlus>
           </ScrollView>
         </View>
       </SafeAreaView>

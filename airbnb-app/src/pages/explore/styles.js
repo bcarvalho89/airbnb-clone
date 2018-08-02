@@ -54,6 +54,36 @@ const HelpFindCategoryWrapper = styled.View`
   marginTop: 20;
 `;
 
+const AirbnbPlus = styled.View`
+  margin-vertical: 40;
+  padding-horizontal: 20
+`;
+
+const AirbnbPlusTitle = styled.Text`
+  font-size: 26;
+  font-weight: 700;
+`;
+
+const AirbnbPlusParagraph = styled.Text`
+  font-size: 18;
+  margin-top: 10;
+  font-weight: 100
+`;
+
+const AirbnbPlusImageWrapper = styled.View`
+  width: ${props => props.deviceWidth - 40};
+  height:200;
+  margin-top: 20
+`;
+
+const AirbnbPlusImage = styled.Image`
+  flex: 1;
+  width: null;
+  height: null;
+  resize-mode: cover;
+  border-radius: 5;
+`;
+
 export {
   SearchHeader,
   SearchHeaderGroup,
@@ -61,5 +91,10 @@ export {
   SearchHeaderInput,
   HelpFindWrapper,
   HelpFindTitle,
-  HelpFindCategoryWrapper
+  HelpFindCategoryWrapper,
+  AirbnbPlus,
+  AirbnbPlusTitle,
+  AirbnbPlusParagraph,
+  AirbnbPlusImageWrapper,
+  AirbnbPlusImage
 };
