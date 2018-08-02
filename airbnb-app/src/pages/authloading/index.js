@@ -15,6 +15,8 @@ class AuthLoading extends Component {
 
   bootstrapAsync = async () => {
     const userToken = await AsyncStorage.getItem('@AirbnbApp:token');
+
+    console.log('AuthLoading', userToken);
     this.props.navigation.navigate(userToken ? 'App' : 'Auth');
   };
 

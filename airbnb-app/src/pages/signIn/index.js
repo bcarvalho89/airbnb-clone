@@ -23,6 +23,18 @@ const goToApp = NavigationActions.navigate({
 });
 
 export default class SignIn extends Component {
+  constructor(props) {
+    super(props);
+
+    this.bootstrapAsync();
+  }
+
+  bootstrapAsync = async () => {
+    const userToken = await AsyncStorage.getItem('@AirbnbApp:token');
+
+    console.log('SignIn', userToken);
+    this.props.navigation.navigate(userToken ? 'App' : 'Auth');
+  };
 
   static navigationOptions = {
     header: null
