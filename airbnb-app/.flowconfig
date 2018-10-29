@@ -19,15 +19,22 @@
 ; Ignore metro
 .*/node_modules/metro/.*
 
+.*/node_modules/styled-components/.*
+
 [include]
 
 [libs]
 node_modules/react-native/Libraries/react-native/react-native-interface.js
 node_modules/react-native/flow/
 node_modules/react-native/flow-github/
+node_modules/styled-components/flow-typed/danger_v0.x.x.js
+node_modules/styled-components/flow-typed/react-native.js
 
 [options]
 emoji=true
+
+esproposal.optional_chaining=enable
+esproposal.nullish_coalescing=enable
 
 module.system=haste
 module.system.haste.use_name_reducers=true
@@ -64,4 +71,4 @@ suppress_comment=\\(.\\|\n\\)*\\$FlowFixedInNextDeploy
 suppress_comment=\\(.\\|\n\\)*\\$FlowExpectedError
 
 [version]
-^0.75.0
+^0.78.0
