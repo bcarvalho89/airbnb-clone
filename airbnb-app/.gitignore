@@ -57,3 +57,6 @@ buck-out/
 
 yarn.lock
 package-lock.json
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/res/drawable-*
+dist/

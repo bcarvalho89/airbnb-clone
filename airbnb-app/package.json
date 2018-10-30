@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "build:android": "npm run clean:android && mkdir -p ./android/app/build/intermediates/assets/debug && react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug && cd android && ./gradlew assemble && cp -r ./android/app/build/outputs/apk/ ./dist",
+    "clean:android": "rm -rf ./android/app/build && rm -rf ./dist"
   },
   "dependencies": {
     "axios": "0.18.0",
