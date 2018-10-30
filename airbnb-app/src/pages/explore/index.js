@@ -6,18 +6,19 @@ import {
   StatusBar,
   ScrollView,
   Dimensions,
-  Image,
-  Text
+  Animated
 } from 'react-native';
 
 import Category from '../../components/explore/Category';
 import Property from '../../components/explore/Property';
+import Tag from '../../components/explore/Tag';
 
 import {
   SearchHeader,
   SearchHeaderGroup,
   SearchHeaderIcon,
   SearchHeaderInput,
+  TagWrapper,
   HelpFindWrapper,
   HelpFindTitle,
   HelpFindCategoryWrapper,
@@ -38,27 +39,60 @@ class ExploreTab extends Component {
     super(props);
     this.state = {
     };
-
-    this.startHeaderHeight = 80;
   }
 
   componentWillMount() {
+    this.scrollY = new Animated.Value(0);
+
+    this.startHeaderHeight = 80;
+    this.endHeaderHeight = 50;
+
     if (Platform.OS === 'android') {
       this.startHeaderHeight = 100 + StatusBar.currentHeight;
+      this.endHeaderHeight = 70 + StatusBar.currentHeight;
     }
+
+    this.animatedHeaderHeight = this.scrollY.interpolate({
+      inputRange: [0, 50],
+      outputRange: [this.startHeaderHeight, this.endHeaderHeight],
+      extrapolate: 'clamp'
+    });
+
+    this.animatedOpacity = this.animatedHeaderHeight.interpolate({
+      inputRange: [this.endHeaderHeight, this.startHeaderHeight],
+      outputRange: [0, 1],
+      extrapolate: 'clamp'
+    });
+    
+    this.animatedTagTop = this.animatedHeaderHeight.interpolate({
+      inputRange: [this.endHeaderHeight, this.startHeaderHeight],
+      outputRange: [-5, 15],
+      extrapolate: 'clamp'
+    });
   }
 
   render() {
+    const StyledAnimatedSearchHeader = Animated.createAnimatedComponent(SearchHeader);
+    const StyledAnimatedTagWrapper = Animated.createAnimatedComponent(TagWrapper);
+
     return (
       <SafeAreaView style={{ flex: 1}}>
         <View style={{ flex: 1}}>
-          <SearchHeader height={this.startHeaderHeight}>
+          <StyledAnimatedSearchHeader style={{height: this.animatedHeaderHeight}}>
             <SearchHeaderGroup offetTop={Platform.OS == 'android' ? 20 : null}>
               <SearchHeaderIcon name="ios-search" size={24} />
               <SearchHeaderInput underlineColorAndroid="transparent" placeholder="Experimente &quot;Shanghai&quot;" placeholderTextColor="grey" />
             </SearchHeaderGroup>
-          </SearchHeader>
-          <ScrollView scrollEventThrottle={16}>
+            <StyledAnimatedTagWrapper style={{top: this.animatedTagTop, opacity: this.animatedOpacity}} >
+              <Tag name="Guests" />
+              <Tag name="Dates" />
+            </StyledAnimatedTagWrapper>
+          </StyledAnimatedSearchHeader>
+          <ScrollView scrollEventThrottle={16} onScroll={Animated.event(
+            [
+              {nativeEvent: {contentOffset: {y: this.scrollY}}}
+            ]
+          )}>
             <HelpFindWrapper>
               <HelpFindTitle>O que podemos ajudar você a encontrar?</HelpFindTitle>
               <HelpFindCategoryWrapper>

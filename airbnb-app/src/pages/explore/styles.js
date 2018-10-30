@@ -5,7 +5,6 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import { theme } from '../../helpers/theme';
 
 const SearchHeader = styled.View`
-  height: ${props => props.height};
   background-color: #fff;
   shadow-offset: 0 0;
   shadow-color: #000;
@@ -38,6 +37,12 @@ const SearchHeaderInput = styled.TextInput`
   font-weight: 700;
   background-color: #fff;
   height: 40;
+`;
+
+const TagWrapper = styled.View`
+  flexDirection: row;
+  position: relative;
+  marginHorizontal: 20;
 `;
 
 const HelpFindWrapper = styled.View`
@@ -110,6 +115,7 @@ export {
   SearchHeaderGroup,
   SearchHeaderIcon,
   SearchHeaderInput,
+  TagWrapper,
   HelpFindWrapper,
   HelpFindTitle,
   HelpFindCategoryWrapper,

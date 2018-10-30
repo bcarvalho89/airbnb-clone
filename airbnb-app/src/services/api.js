@@ -4,10 +4,11 @@ import axios from 'axios';
 ** Genymotion:              http://10.0.3.2:3333/
 ** Emulador Android Studio: http://10.0.2.2:3333/
 ** Simulador IOS:           http://localhost:3333/
+** Stage:                   https://airbnb-clone-br.herokuapp.com
 */
 
 const api = axios.create({
-  baseURL: 'http://10.0.3.2:3333'
+  baseURL: 'https://airbnb-clone-br.herokuapp.com'
 });
 
 export default api;
