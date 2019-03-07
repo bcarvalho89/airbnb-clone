@@ -4,13 +4,21 @@ const CategoryWrapper = styled.View`
   height: 130;
   width: 130;
   margin-left: 20;
-  margin-bottom: 20;
-  elevation: 2;
+  margin-bottom: 50;
+  elevation: 1;
   border-radius: 5;
+  background-color: #fff;
+  shadow-offset: 0 0;
+  shadow-color: #000;
+  shadow-opacity: 0.2;
+  margin-right: ${props => props.offsetRight ? 20 : 0 };
 `;
 
 const CategoryImageWrapper = styled.View`
-  flex: 2
+  flex: 2;
+  overflow: hidden;
+  borderTopLeftRadius: 5;
+  borderTopRightRadius: 5;
 `;
 
 const CategoryImage = styled.Image`
@@ -18,8 +26,6 @@ const CategoryImage = styled.Image`
   width: null;
   height: null;
   resize-mode: cover;
-  border-top-left-radius: 5;
-  border-top-right-radius: 5;
 `;
 
 const CategoryTextWrapper = styled.View`

@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-import {
-  View,
-  Text,
-  Image
-} from "react-native";
 
 import {
   CategoryWrapper,
@@ -17,7 +12,7 @@ class Category extends Component {
 
   render() {
     return (
-      <CategoryWrapper>
+      <CategoryWrapper offsetRight={ this.props.offsetRight }>
         <CategoryImageWrapper>
           <CategoryImage source={this.props.imageUri} />
         </CategoryImageWrapper>

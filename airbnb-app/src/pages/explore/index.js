@@ -99,7 +99,7 @@ class ExploreTab extends Component {
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                   <Category imageUri={require('../../images/home.jpg')} name="Acomodações" />
                   <Category imageUri={require('../../images/experiences.jpg')} name="Experiências" />
-                  <Category imageUri={require('../../images/restaurant.jpg')} name="Restaurantes" />
+                  <Category imageUri={require('../../images/restaurant.jpg')} name="Restaurantes" offsetRight={true} />
                 </ScrollView>
               </HelpFindCategoryWrapper>
             </HelpFindWrapper>
