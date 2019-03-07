@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../../helpers/theme';
 
 const PropertyWrapper = styled.View`
-  width: ${props => props.deviceWidth / 2 - 25};
+  width: ${props => ( props.deviceWidth / 2 - 25 )};
   margin-bottom: 30;
 `;
 

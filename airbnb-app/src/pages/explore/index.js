@@ -79,7 +79,7 @@ class ExploreTab extends Component {
       <SafeAreaView style={{ flex: 1}}>
         <View style={{ flex: 1}}>
           <StyledAnimatedSearchHeader style={{height: this.animatedHeaderHeight}}>
-            <SearchHeaderGroup offetTop={Platform.OS == 'android' ? 20 : null}>
+            <SearchHeaderGroup offetTop={Platform.OS == 'android' ? 20 : 0}>
               <SearchHeaderIcon name="ios-search" size={24} />
               <SearchHeaderInput underlineColorAndroid="transparent" placeholder="Experimente &quot;Shanghai&quot;" placeholderTextColor="grey" />
             </SearchHeaderGroup>

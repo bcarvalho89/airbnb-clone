@@ -6,10 +6,7 @@ import { theme } from '../../helpers/theme';
 
 const SearchHeader = styled.View`
   background-color: #fff;
-  shadow-offset: 0 0;
-  shadow-color: #000;
-  shadow-opacity: 0.2;
-  elevation: 2;
+  margin-top: 15;
 `;
 
 const SearchHeaderGroup = styled.View`
@@ -48,6 +45,7 @@ const TagWrapper = styled.View`
 const HelpFindWrapper = styled.View`
   flex: 1;
   padding-top: 20;
+  margin-top: 50;
 `;
 
 const HelpFindTitle = styled.Text`

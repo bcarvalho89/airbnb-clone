@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C7B06CCB2C0DD1DF72E7B4E7C2126B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		126EA67B64C2B8596A6E86DEEC5A91F3 /* Pods-AirbnbApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD543C34D1BC268C1FC46A5F7C562452 /* Pods-AirbnbApp-dummy.m */; };
+		1EE8775383267A03D6A82B8A24BFF241 /* Pods-AirbnbApp-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C855AABC043831BC95F2B72ECE8F9D5 /* Pods-AirbnbApp-tvOSTests-dummy.m */; };
+		26D34A5E2EAFA0B65050C73E3D2D8B6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		26FA35A41B01A8DF806921166C3AE229 /* Pods-AirbnbAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354C1468FEB0B128C4EC9D3744CB0695 /* Pods-AirbnbAppTests-dummy.m */; };
+		88C6778123F70EA2D24755F80D6A4663 /* Pods-AirbnbApp-tvOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0C182FCAAAAFF40A2694F9FDDB542A /* Pods-AirbnbApp-tvOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93E34D1005F94D14EA42624227DB83C3 /* Pods-AirbnbApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FE348D5E28EAEC467345424B7D6F5A /* Pods-AirbnbApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6E797CE208BB654F2D5762899E8E734 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		FDE0C1B177B8892101A92DBAB608E50C /* Pods-AirbnbAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DDAFCA38CF63EC5F9010EA0698FA453 /* Pods-AirbnbAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AFCE093386DA23711DB1305CF82B44D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C414554E782C9454AA8C523E90CEFC2B;
+			remoteInfo = "Pods-AirbnbApp";
+		};
+		4D2E9C69BED245CCDF3F0590BA886AB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C414554E782C9454AA8C523E90CEFC2B;
+			remoteInfo = "Pods-AirbnbApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A4CA60E7B9029C0558608072E3EEA43 /* Pods-AirbnbApp-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirbnbApp-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1770E91A6402F38BED172C4DC6C2B5EB /* Pods_AirbnbApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirbnbApp.framework; path = "Pods-AirbnbApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BBBBE7CB98D06855C92EBFF4DE58D9A /* Pods_AirbnbApp_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirbnbApp_tvOSTests.framework; path = "Pods-AirbnbApp-tvOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C855AABC043831BC95F2B72ECE8F9D5 /* Pods-AirbnbApp-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirbnbApp-tvOSTests-dummy.m"; sourceTree = "<group>"; };
+		239B34D6D6E5827E8F2BA3B8F8C3E4D6 /* Pods-AirbnbAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirbnbAppTests-Info.plist"; sourceTree = "<group>"; };
+		2B5E2AE685647F007DBDE9E8B6FCF13B /* Pods-AirbnbApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirbnbApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2DDAFCA38CF63EC5F9010EA0698FA453 /* Pods-AirbnbAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirbnbAppTests-umbrella.h"; sourceTree = "<group>"; };
+		354C1468FEB0B128C4EC9D3744CB0695 /* Pods-AirbnbAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirbnbAppTests-dummy.m"; sourceTree = "<group>"; };
+		3F0C182FCAAAAFF40A2694F9FDDB542A /* Pods-AirbnbApp-tvOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirbnbApp-tvOSTests-umbrella.h"; sourceTree = "<group>"; };
+		3F67027A8BEF3B4C26CBAEA5F4AB9B7C /* Pods-AirbnbApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirbnbApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41DD9ABBCF4812585EC1E4C31D6AFA67 /* Pods-AirbnbApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirbnbApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		51522FEDB211F6D7BA32655B809B1636 /* Pods-AirbnbApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirbnbApp.modulemap"; sourceTree = "<group>"; };
+		6A60960425D44A8C31DCADA6B5B93A35 /* Pods-AirbnbApp-tvOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirbnbApp-tvOSTests-Info.plist"; sourceTree = "<group>"; };
+		76FD91E3C976A808D8487B446F9BC04A /* Pods-AirbnbAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirbnbAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		950A14A04C6022089FC31CE8E117F49E /* Pods-AirbnbApp-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirbnbApp-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A86B75AE2BA35D88CDC10BEC6E36CDDF /* Pods-AirbnbAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirbnbAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD543C34D1BC268C1FC46A5F7C562452 /* Pods-AirbnbApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirbnbApp-dummy.m"; sourceTree = "<group>"; };
+		B2452922F00B58A833D34F2248A5F9F2 /* Pods-AirbnbApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirbnbApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEC72E0C17F27BAF35EBB1AF2B956A0D /* Pods-AirbnbApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirbnbApp.release.xcconfig"; sourceTree = "<group>"; };
+		C90407353EF1806539E214EAD6105BF4 /* Pods-AirbnbApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirbnbApp-Info.plist"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CCEA3C697CA1AE03141A3CC545DCA073 /* Pods_AirbnbAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirbnbAppTests.framework; path = "Pods-AirbnbAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D058E2BF459B72C50721E390E99D9D02 /* Pods-AirbnbApp-tvOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirbnbApp-tvOSTests.modulemap"; sourceTree = "<group>"; };
+		DAD4E7F8FFE0CDD43D90D02CBC4BBBDD /* Pods-AirbnbAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirbnbAppTests.modulemap"; sourceTree = "<group>"; };
+		E8FE348D5E28EAEC467345424B7D6F5A /* Pods-AirbnbApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirbnbApp-umbrella.h"; sourceTree = "<group>"; };
+		E9C43FD85E3A8CEA55CE798BDA9B638C /* Pods-AirbnbApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirbnbApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		EB1A0ACBBB64AC5E476CC53BDB35B818 /* Pods-AirbnbAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirbnbAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8FFDB475AF5DD1A1D726F9ED3BC309E /* Pods-AirbnbAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirbnbAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11BBA7564E2593751C7993559A1DC514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E797CE208BB654F2D5762899E8E734 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CADDE80C054CA64243C6B0246ABBCC1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C7B06CCB2C0DD1DF72E7B4E7C2126B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E177815A7E27246BAE079895B408D6E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D34A5E2EAFA0B65050C73E3D2D8B6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B93E80F17CA6B655BECED678E7FEA3F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD189F5EA440B05FCDA7FD2899E968FF /* Pods-AirbnbApp */,
+				3633AEBE81856639904DFB9052DF76D4 /* Pods-AirbnbApp-tvOSTests */,
+				3042DEDFCED089E5744AA866A3C58CEA /* Pods-AirbnbAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3042DEDFCED089E5744AA866A3C58CEA /* Pods-AirbnbAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAD4E7F8FFE0CDD43D90D02CBC4BBBDD /* Pods-AirbnbAppTests.modulemap */,
+				EB1A0ACBBB64AC5E476CC53BDB35B818 /* Pods-AirbnbAppTests-acknowledgements.markdown */,
+				F8FFDB475AF5DD1A1D726F9ED3BC309E /* Pods-AirbnbAppTests-acknowledgements.plist */,
+				354C1468FEB0B128C4EC9D3744CB0695 /* Pods-AirbnbAppTests-dummy.m */,
+				239B34D6D6E5827E8F2BA3B8F8C3E4D6 /* Pods-AirbnbAppTests-Info.plist */,
+				2DDAFCA38CF63EC5F9010EA0698FA453 /* Pods-AirbnbAppTests-umbrella.h */,
+				76FD91E3C976A808D8487B446F9BC04A /* Pods-AirbnbAppTests.debug.xcconfig */,
+				A86B75AE2BA35D88CDC10BEC6E36CDDF /* Pods-AirbnbAppTests.release.xcconfig */,
+			);
+			name = "Pods-AirbnbAppTests";
+			path = "Target Support Files/Pods-AirbnbAppTests";
+			sourceTree = "<group>";
+		};
+		3633AEBE81856639904DFB9052DF76D4 /* Pods-AirbnbApp-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D058E2BF459B72C50721E390E99D9D02 /* Pods-AirbnbApp-tvOSTests.modulemap */,
+				950A14A04C6022089FC31CE8E117F49E /* Pods-AirbnbApp-tvOSTests-acknowledgements.markdown */,
+				0A4CA60E7B9029C0558608072E3EEA43 /* Pods-AirbnbApp-tvOSTests-acknowledgements.plist */,
+				1C855AABC043831BC95F2B72ECE8F9D5 /* Pods-AirbnbApp-tvOSTests-dummy.m */,
+				6A60960425D44A8C31DCADA6B5B93A35 /* Pods-AirbnbApp-tvOSTests-Info.plist */,
+				3F0C182FCAAAAFF40A2694F9FDDB542A /* Pods-AirbnbApp-tvOSTests-umbrella.h */,
+				B2452922F00B58A833D34F2248A5F9F2 /* Pods-AirbnbApp-tvOSTests.debug.xcconfig */,
+				41DD9ABBCF4812585EC1E4C31D6AFA67 /* Pods-AirbnbApp-tvOSTests.release.xcconfig */,
+			);
+			name = "Pods-AirbnbApp-tvOSTests";
+			path = "Target Support Files/Pods-AirbnbApp-tvOSTests";
+			sourceTree = "<group>";
+		};
+		628BE7EDD53E167E741A2E2EAE266914 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1770E91A6402F38BED172C4DC6C2B5EB /* Pods_AirbnbApp.framework */,
+				1BBBBE7CB98D06855C92EBFF4DE58D9A /* Pods_AirbnbApp_tvOSTests.framework */,
+				CCEA3C697CA1AE03141A3CC545DCA073 /* Pods_AirbnbAppTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CD189F5EA440B05FCDA7FD2899E968FF /* Pods-AirbnbApp */ = {
+			isa = PBXGroup;
+			children = (
+				51522FEDB211F6D7BA32655B809B1636 /* Pods-AirbnbApp.modulemap */,
+				3F67027A8BEF3B4C26CBAEA5F4AB9B7C /* Pods-AirbnbApp-acknowledgements.markdown */,
+				E9C43FD85E3A8CEA55CE798BDA9B638C /* Pods-AirbnbApp-acknowledgements.plist */,
+				AD543C34D1BC268C1FC46A5F7C562452 /* Pods-AirbnbApp-dummy.m */,
+				C90407353EF1806539E214EAD6105BF4 /* Pods-AirbnbApp-Info.plist */,
+				E8FE348D5E28EAEC467345424B7D6F5A /* Pods-AirbnbApp-umbrella.h */,
+				2B5E2AE685647F007DBDE9E8B6FCF13B /* Pods-AirbnbApp.debug.xcconfig */,
+				BEC72E0C17F27BAF35EBB1AF2B956A0D /* Pods-AirbnbApp.release.xcconfig */,
+			);
+			name = "Pods-AirbnbApp";
+			path = "Target Support Files/Pods-AirbnbApp";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				628BE7EDD53E167E741A2E2EAE266914 /* Products */,
+				0B93E80F17CA6B655BECED678E7FEA3F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		70D78DDD4FA3436DE4FC0F0FF3FE0A2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E34D1005F94D14EA42624227DB83C3 /* Pods-AirbnbApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0A72F5DD870D922A3A43C727BFDE50 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C6778123F70EA2D24755F80D6A4663 /* Pods-AirbnbApp-tvOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD2C400C26CC82679392877F55900F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE0C1B177B8892101A92DBAB608E50C /* Pods-AirbnbAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		184E920C76DF4BB095BD6F7BCD3A16AE /* Pods-AirbnbAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8B0824F874E27DAC1BFDE4FE3F0EBBD /* Build configuration list for PBXNativeTarget "Pods-AirbnbAppTests" */;
+			buildPhases = (
+				DFBD2C400C26CC82679392877F55900F /* Headers */,
+				1F39CE20A5350577AE75AD67DE47EB81 /* Sources */,
+				E177815A7E27246BAE079895B408D6E9 /* Frameworks */,
+				A3C2391375EB4080E8E67E35F9060FC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C2DAC28705A26E02B986096B7DD656C /* PBXTargetDependency */,
+			);
+			name = "Pods-AirbnbAppTests";
+			productName = "Pods-AirbnbAppTests";
+			productReference = CCEA3C697CA1AE03141A3CC545DCA073 /* Pods_AirbnbAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C414554E782C9454AA8C523E90CEFC2B /* Pods-AirbnbApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26A2615F49657A490A515E448778EDBF /* Build configuration list for PBXNativeTarget "Pods-AirbnbApp" */;
+			buildPhases = (
+				70D78DDD4FA3436DE4FC0F0FF3FE0A2D /* Headers */,
+				6DCECBC0F13D1A8FB303FD27A91CE994 /* Sources */,
+				CADDE80C054CA64243C6B0246ABBCC1C /* Frameworks */,
+				0CDA38CB5A36CE50FA8841B5AE4A5CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AirbnbApp";
+			productName = "Pods-AirbnbApp";
+			productReference = 1770E91A6402F38BED172C4DC6C2B5EB /* Pods_AirbnbApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF702D42710DAA23F721A4E18CC9B138 /* Pods-AirbnbApp-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8645C2A34AB271A0C9A88D3A902B7870 /* Build configuration list for PBXNativeTarget "Pods-AirbnbApp-tvOSTests" */;
+			buildPhases = (
+				AD0A72F5DD870D922A3A43C727BFDE50 /* Headers */,
+				88A33A86DDFF6E140A1C0C44475FCE8D /* Sources */,
+				11BBA7564E2593751C7993559A1DC514 /* Frameworks */,
+				73CD5419CFA29761CB70C1468F9833F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CF2DA45643EE3A55929B942E5EE3B9C /* PBXTargetDependency */,
+			);
+			name = "Pods-AirbnbApp-tvOSTests";
+			productName = "Pods-AirbnbApp-tvOSTests";
+			productReference = 1BBBBE7CB98D06855C92EBFF4DE58D9A /* Pods_AirbnbApp_tvOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 628BE7EDD53E167E741A2E2EAE266914 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C414554E782C9454AA8C523E90CEFC2B /* Pods-AirbnbApp */,
+				CF702D42710DAA23F721A4E18CC9B138 /* Pods-AirbnbApp-tvOSTests */,
+				184E920C76DF4BB095BD6F7BCD3A16AE /* Pods-AirbnbAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CDA38CB5A36CE50FA8841B5AE4A5CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73CD5419CFA29761CB70C1468F9833F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3C2391375EB4080E8E67E35F9060FC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F39CE20A5350577AE75AD67DE47EB81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FA35A41B01A8DF806921166C3AE229 /* Pods-AirbnbAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCECBC0F13D1A8FB303FD27A91CE994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				126EA67B64C2B8596A6E86DEEC5A91F3 /* Pods-AirbnbApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A33A86DDFF6E140A1C0C44475FCE8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE8775383267A03D6A82B8A24BFF241 /* Pods-AirbnbApp-tvOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C2DAC28705A26E02B986096B7DD656C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AirbnbApp";
+			target = C414554E782C9454AA8C523E90CEFC2B /* Pods-AirbnbApp */;
+			targetProxy = 4AFCE093386DA23711DB1305CF82B44D /* PBXContainerItemProxy */;
+		};
+		3CF2DA45643EE3A55929B942E5EE3B9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AirbnbApp";
+			target = C414554E782C9454AA8C523E90CEFC2B /* Pods-AirbnbApp */;
+			targetProxy = 4D2E9C69BED245CCDF3F0590BA886AB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07488D4657FB0A78086563621D425F8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		110D2775ADC4A1F59124B4D87BE35B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76FD91E3C976A808D8487B446F9BC04A /* Pods-AirbnbAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirbnbAppTests/Pods-AirbnbAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirbnbAppTests/Pods-AirbnbAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1DE4CE7C9E4645A984610DF83B833EB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2452922F00B58A833D34F2248A5F9F2 /* Pods-AirbnbApp-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirbnbApp-tvOSTests/Pods-AirbnbApp-tvOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirbnbApp-tvOSTests/Pods-AirbnbApp-tvOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		408438621DB28787921B4B77E01780D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B5E2AE685647F007DBDE9E8B6FCF13B /* Pods-AirbnbApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirbnbApp/Pods-AirbnbApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirbnbApp/Pods-AirbnbApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E23B8AA3B621A5528048AF9B78E7D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A86B75AE2BA35D88CDC10BEC6E36CDDF /* Pods-AirbnbAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirbnbAppTests/Pods-AirbnbAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirbnbAppTests/Pods-AirbnbAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CAB859CAD8439A0847054AC0F1D5ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC72E0C17F27BAF35EBB1AF2B956A0D /* Pods-AirbnbApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirbnbApp/Pods-AirbnbApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirbnbApp/Pods-AirbnbApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E32511219A94CF491C10DF6C211998D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41DD9ABBCF4812585EC1E4C31D6AFA67 /* Pods-AirbnbApp-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirbnbApp-tvOSTests/Pods-AirbnbApp-tvOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirbnbApp-tvOSTests/Pods-AirbnbApp-tvOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26A2615F49657A490A515E448778EDBF /* Build configuration list for PBXNativeTarget "Pods-AirbnbApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408438621DB28787921B4B77E01780D2 /* Debug */,
+				9CAB859CAD8439A0847054AC0F1D5ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07488D4657FB0A78086563621D425F8A /* Debug */,
+				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8645C2A34AB271A0C9A88D3A902B7870 /* Build configuration list for PBXNativeTarget "Pods-AirbnbApp-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DE4CE7C9E4645A984610DF83B833EB5 /* Debug */,
+				E32511219A94CF491C10DF6C211998D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8B0824F874E27DAC1BFDE4FE3F0EBBD /* Build configuration list for PBXNativeTarget "Pods-AirbnbAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110D2775ADC4A1F59124B4D87BE35B17 /* Debug */,
+				5E23B8AA3B621A5528048AF9B78E7D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
