@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { 
-  SafeAreaView,
+  Text,
   View,
   Platform,
   StatusBar,
@@ -8,6 +8,8 @@ import {
   Dimensions,
   Animated
 } from 'react-native';
+
+import IconEntypo from 'react-native-vector-icons/Entypo'
 
 import { Main } from '../../helpers/theme';
 
@@ -29,6 +31,9 @@ import {
   AirbnbPlusParagraph,
   AirbnbPlusImageWrapper,
   AirbnbPlusImage,
+  AirbnbPlusButtonWrapper,
+  AirbnbPlusButton,
+  AirbnbPlusButtonText,
   PropertyListWrapper,
   PropertyListTitle,
   PropertyList
@@ -110,7 +115,13 @@ class ExploreTab extends Component {
               <AirbnbPlusTitle>Apresentando Airbnb Plus</AirbnbPlusTitle>
               <AirbnbPlusParagraph>Uma nova seleção de acomodações com conforto e qualidade verificados.</AirbnbPlusParagraph>
               <AirbnbPlusImageWrapper deviceWidth={width}>
-                <AirbnbPlusImage source={require('../../images/home.jpg')} />
+                <AirbnbPlusImage source={require('../../images/airbnb-plus-cover.jpg')} />
+                <AirbnbPlusButtonWrapper deviceWidth={width}>
+                  <AirbnbPlusButton>
+                    <AirbnbPlusButtonText>VER ACOMODAÇÕES</AirbnbPlusButtonText>
+                    <IconEntypo name="chevron-small-right" size={18} />
+                  </AirbnbPlusButton>
+                </AirbnbPlusButtonWrapper>
               </AirbnbPlusImageWrapper>
             </AirbnbPlus>
 

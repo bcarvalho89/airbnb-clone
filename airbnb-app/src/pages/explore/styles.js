@@ -78,8 +78,8 @@ const AirbnbPlusParagraph = styled.Text`
 
 const AirbnbPlusImageWrapper = styled.View`
   width: ${props => props.deviceWidth - 40};
-  height:200;
-  margin-top: 20
+  height: 250;
+  margin-top: 20;
 `;
 
 const AirbnbPlusImage = styled.Image`
@@ -90,8 +90,41 @@ const AirbnbPlusImage = styled.Image`
   border-radius: ${theme.borders.defaultBorderRadius / 2};
 `;
 
+const AirbnbPlusButtonWrapper = styled.View`
+  position: absolute;
+  flex: 1;
+  bottom: 40;
+  width: ${props => props.deviceWidth - 40};
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+`;
+
+const AirbnbPlusButton = styled.TouchableOpacity`
+  width: 230;
+  background-color: #fff;
+  border-radius: ${theme.borders.defaultBorderRadius};
+  text-align: center;
+  padding-horizontal: 20;
+  padding-vertical: 15;
+  elevation: 2;
+  shadow-color: #000;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+const AirbnbPlusButtonText = styled.Text`
+  letter-spacing: 2;
+  font-size: 12;
+  font-weight: 400;
+  text-align: center;
+  margin-right: 5;
+`;
+
 const PropertyListWrapper = styled.View`
-  margin-top:40
+  margin-top: 40;
 `;
 
 const PropertyListTitle = styled.Text`
@@ -123,6 +156,9 @@ export {
   AirbnbPlusParagraph,
   AirbnbPlusImageWrapper,
   AirbnbPlusImage,
+  AirbnbPlusButtonWrapper,
+  AirbnbPlusButton,
+  AirbnbPlusButtonText,
   PropertyListWrapper,
   PropertyListTitle,
   PropertyList
