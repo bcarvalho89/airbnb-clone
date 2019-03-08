@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
+import { theme } from '../../../helpers/theme';
+
 const CategoryWrapper = styled.View`
   height: 130;
   width: 130;
   margin-left: 20;
   margin-bottom: 50;
-  elevation: 1;
-  border-radius: 5;
+  elevation: 2;
+  border-radius: ${theme.borders.defaultBorderRadius};
   background-color: #fff;
   shadow-offset: 0 0;
   shadow-color: #000;
@@ -17,8 +19,8 @@ const CategoryWrapper = styled.View`
 const CategoryImageWrapper = styled.View`
   flex: 2;
   overflow: hidden;
-  borderTopLeftRadius: 5;
-  borderTopRightRadius: 5;
+  borderTopLeftRadius: ${theme.borders.defaultBorderRadius};
+  borderTopRightRadius: ${theme.borders.defaultBorderRadius};
 `;
 
 const CategoryImage = styled.Image`

@@ -16,7 +16,7 @@ const PropertyImage = styled.Image`
   height: 110;
   resize-mode: cover;
   flex: 1;
-  border-radius: 3
+  border-radius: ${theme.borders.defaultBorderRadius}
 `;
 
 const PropertyFavorite = styled.TouchableOpacity`

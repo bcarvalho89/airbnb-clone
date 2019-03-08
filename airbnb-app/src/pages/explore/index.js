@@ -9,6 +9,8 @@ import {
   Animated
 } from 'react-native';
 
+import { Main } from '../../helpers/theme';
+
 import Category from '../../components/explore/Category';
 import Property from '../../components/explore/Property';
 import Tag from '../../components/explore/Tag';
@@ -76,11 +78,11 @@ class ExploreTab extends Component {
     const StyledAnimatedTagWrapper = Animated.createAnimatedComponent(TagWrapper);
 
     return (
-      <SafeAreaView style={{ flex: 1}}>
+      <Main style={{ flex: 1}}>
         <View style={{ flex: 1}}>
           <StyledAnimatedSearchHeader style={{height: this.animatedHeaderHeight}}>
-            <SearchHeaderGroup offetTop={Platform.OS == 'android' ? 20 : 0}>
-              <SearchHeaderIcon name="ios-search" size={24} />
+            <SearchHeaderGroup>
+              <SearchHeaderIcon name="ios-search" size={22} />
               <SearchHeaderInput underlineColorAndroid="transparent" placeholder="Experimente &quot;Shanghai&quot;" placeholderTextColor="grey" />
             </SearchHeaderGroup>
             <StyledAnimatedTagWrapper style={{top: this.animatedTagTop, opacity: this.animatedOpacity}} >
@@ -94,7 +96,7 @@ class ExploreTab extends Component {
             ]
           )}>
             <HelpFindWrapper>
-              <HelpFindTitle>O que podemos ajudar você a encontrar?</HelpFindTitle>
+              <HelpFindTitle>Explore o Airbnb</HelpFindTitle>
               <HelpFindCategoryWrapper>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                   <Category imageUri={require('../../images/home.jpg')} name="Acomodações" />
@@ -123,7 +125,7 @@ class ExploreTab extends Component {
             </PropertyListWrapper>
           </ScrollView>
         </View>
-      </SafeAreaView>
+      </Main>
     );
   }
 }

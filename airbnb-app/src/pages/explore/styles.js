@@ -21,17 +21,18 @@ const SearchHeaderGroup = styled.View`
   shadow-color: #000;
   shadow-opacity: 0.2;
   elevation: 2;
-  border-radius: 5;
-  margin-top: ${props => props.offetTop};
+  border-radius: ${theme.borders.defaultBorderRadius};
+  margin-top: ${props => props.offetTop ? props.offetTop : 0};
 `;
 
 const SearchHeaderIcon = styled(Icon)`
-  margin-right: 10
+  margin-right: 15
 `;
 
 const SearchHeaderInput = styled.TextInput`
   flex: 1;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 16;
   background-color: #fff;
   height: 40;
 `;
@@ -44,14 +45,14 @@ const TagWrapper = styled.View`
 
 const HelpFindWrapper = styled.View`
   flex: 1;
-  padding-top: 20;
-  margin-top: 50;
+  margin-top: 20;
 `;
 
 const HelpFindTitle = styled.Text`
   font-size: 24;
   font-weight: 700;
   padding-horizontal: 20;
+  margin-bottom: 10;
 `;
 
 const HelpFindCategoryWrapper = styled.View`
@@ -86,7 +87,7 @@ const AirbnbPlusImage = styled.Image`
   width: null;
   height: null;
   resize-mode: cover;
-  border-radius: 5;
+  border-radius: ${theme.borders.defaultBorderRadius / 2};
 `;
 
 const PropertyListWrapper = styled.View`

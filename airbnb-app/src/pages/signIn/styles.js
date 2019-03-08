@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { theme } from '../../helpers/theme';
+
 const Logo = styled.Image`
   height: 30%;
   marginBottom: 40px;
@@ -8,7 +10,7 @@ const Logo = styled.Image`
 const Input = styled.TextInput`
   paddingHorizontal: 20px;
   paddingVertical: 15px;
-  borderRadius: 5px;
+  borderRadius: ${theme.borders.defaultBorderRadius};
   backgroundColor: #FFF;
   alignSelf: stretch;
   marginBottom: 15px;
@@ -26,7 +28,7 @@ const ErrorMessage = styled.Text`
 
 const Button = styled.TouchableHighlight`
   padding: 20px;
-  borderRadius: 5px;
+  borderRadius: ${theme.borders.defaultBorderRadius};
   backgroundColor: #FC6663;
   alignSelf: stretch;
   margin: 15px;

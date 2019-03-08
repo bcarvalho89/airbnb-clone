@@ -7,6 +7,9 @@ const theme = {
     textColor: '#484848',
     fullStarColor: '#008489',
     defaultBackgroundColor: '#fff'
+  },
+  borders: {
+    defaultBorderRadius: 5
   }
 };
 
@@ -14,7 +17,11 @@ const Container = styled.View`
   flex: 1;
   alignItems: center;
   justifyContent: center;
-  backgroundColor: #F5F5F5;
+  backgroundColor: ${theme.colors.defaultBackgroundColor};
 `;
 
-export { theme, Container };
+const Main = styled.SafeAreaView`
+  backgroundColor: ${theme.colors.defaultBackgroundColor};
+`;
+
+export { theme, Container, Main };
