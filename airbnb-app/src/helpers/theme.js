@@ -20,6 +20,15 @@ const theme = {
 
 const Container = styled.View`
   flex: 1;
+  backgroundColor: ${props => props.backgroundColor || theme.colors.defaultBackgroundColor};
+`;
+
+const ContainerWrapper = styled.View`
+  paddingHorizontal: ${theme.spacings.defaultSpacing};
+`;
+
+const ContainerCentered = styled.View`
+  flex: 1;
   alignItems: center;
   justifyContent: center;
   backgroundColor: ${props => props.backgroundColor || theme.colors.defaultBackgroundColor};
@@ -29,4 +38,4 @@ const Main = styled.SafeAreaView`
   backgroundColor: ${theme.colors.defaultBackgroundColor};
 `;
 
-export { theme, Container, Main };
+export { theme, Container, ContainerCentered, ContainerWrapper, Main };

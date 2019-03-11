@@ -16,60 +16,57 @@ const SignInButtonText = styled.Text`
   font-weight: 400;
 `;
 
-// const Logo = styled.Image`
-//   height: 30%;
-//   marginBottom: 40px;
-// `;
+const Logo = styled.Image`
+  width: 50;
+  height: 50;
+  tintColor: #fff;
+  margin-top: 10;
+`;
 
-// const Input = styled.TextInput`
-//   paddingHorizontal: 20px;
-//   paddingVertical: 15px;
-//   borderRadius: ${theme.borders.defaultBorderRadius};
-//   backgroundColor: #FFF;
-//   alignSelf: stretch;
-//   marginBottom: 15px;
-//   marginHorizontal: 20px;
-//   fontSize: 16px;
-// `;
+const Greetings = styled.Text`
+  color: #fff;
+  margin-top: 15;
+  font-size: 32;
+  max-width: 320
+`;
 
-// const ErrorMessage = styled.Text`
-//   textAlign: center;
-//   color: #ce2029;
-//   fontSize: 16px;
-//   marginBottom: 15px;
-//   marginHorizontal: 20px;
-// `;
+const CreateAccountOptions = styled.View`
+  flex-direction: column;
+  margin-top: 40;
+`;
 
-// const Button = styled.TouchableHighlight`
-//   padding: 20px;
-//   borderRadius: ${theme.borders.defaultBorderRadius};
-//   backgroundColor: #FC6663;
-//   alignSelf: stretch;
-//   margin: 15px;
-//   marginHorizontal: 20px;
-// `;
+const CreateAccountOptionsText = styled.Text`
+  font-size: 20;
+  font-weight: 400
+  text-align: center;
+  border: 2px solid ${ props => props.color === 'light' ? theme.colors.secondaryColor :  '#fff' };
+  border-radius: 40;
+  paddingVertical: 10;
+  color: ${ props => props.color === 'light' ? theme.colors.secondaryColor :  '#fff' };
+  margin-bottom: 10;
+  background-color: ${ props => props.color === 'light' ? '#fff' : theme.colors.secondaryColor };
+`;
 
-// const ButtonText = styled.Text`
-//   color: #FFF;
-//   fontWeight: bold;
-//   fontSize: 16px;
-//   textAlign: center;
-// `;
+const MoreOptions = styled.Text`
+  color: #fff;
+  font-size: 18;
+  margin-bottom: 40;
+  margin-top: 30;
+`;
 
-// const SignUpLink = styled.TouchableHighlight`
-//   padding: 10px;
-//   marginTop: 20px;
-// `;
-
-// const SignUpLinkText = styled.Text`
-//   color: #999;
-//   fontWeight: bold;
-//   fontSize: 16px;
-//   textAlign: center;
-// `;
+const Disclaimer = styled.Text`
+  color: #fff;
+  font-size: 16;
+`;
 
 export { 
   CloseButton,
   SignInButton,
-  SignInButtonText
+  SignInButtonText,
+  Logo,
+  Greetings,
+  CreateAccountOptions,
+  CreateAccountOptionsText,
+  MoreOptions,
+  Disclaimer
 };
