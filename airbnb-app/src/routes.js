@@ -12,6 +12,7 @@ import TripsTab from './pages/trips';
 import InboxTab from './pages/inbox';
 import ProfileTab from './pages/profile';
 
+import Onboarding from './pages/onboarding';
 import SignIn from './pages/signIn';
 import SignUp from './pages/signUp';
 import AuthLoading from './pages/authloading';
@@ -77,10 +78,25 @@ const Routes = createBottomTabNavigator({
   }
 });
 
-const AuthStack = createStackNavigator({
-  SignIn: SignIn,
-  SignUp: SignUp
-});
+const AuthStack = createStackNavigator(
+  {
+    Onboarding: Onboarding,
+    SignIn: SignIn,
+    SignUp: SignUp
+  },
+  {
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: theme.colors.secondaryColor,
+        elevation: 0
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    },
+  }
+);
 
 export default createSwitchNavigator(
   {
