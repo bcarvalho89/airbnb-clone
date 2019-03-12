@@ -24,7 +24,10 @@ const Container = styled.View`
 `;
 
 const ContainerWrapper = styled.View`
+  padding-top: ${theme.spacings.defaultSpacing / 2};
   paddingHorizontal: ${theme.spacings.defaultSpacing};
+  position: relative;
+  flex: 1;
 `;
 
 const ContainerCentered = styled.View`

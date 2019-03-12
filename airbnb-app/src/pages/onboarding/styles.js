@@ -20,7 +20,6 @@ const Logo = styled.Image`
   width: 50;
   height: 50;
   tintColor: #fff;
-  margin-top: 10;
 `;
 
 const Greetings = styled.Text`
