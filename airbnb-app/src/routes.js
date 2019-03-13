@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Image, Animated, Easing, Platform } from 'react-native';
 import { createSwitchNavigator, createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 import IconOcticons from 'react-native-vector-icons/Octicons';
 import IconIonicons from 'react-native-vector-icons/Ionicons';
@@ -16,6 +16,57 @@ import Onboarding from './pages/onboarding';
 import SignIn from './pages/signIn';
 import SignUp from './pages/signUp';
 import AuthLoading from './pages/authloading';
+
+const CollapseExpand = (index, position) => {
+  const inputRange = [index - 1, index, index + 1];
+  const opacity = position.interpolate({
+    inputRange,
+    outputRange: [0, 1, 1]
+  });
+
+  const scaleY = position.interpolate({
+    inputRange,
+    outputRange: ([0, 1, 1])
+  });
+
+  return {
+    opacity,
+    transform: [{ scaleY }]
+  }
+};
+
+const SlideFromRight = (index, position, width) => {
+  const inputRange = [index - 1, index, index + 1];
+  const translateX = position.interpolate({
+    inputRange,
+    outputRange: [width, 0, 0]
+  });
+  const slideFromRight = { transform: [{ translateX }] }
+
+  return slideFromRight;
+};
+
+const TransitionConfiguration = () => {
+  return {
+    transitionSpec: {
+      duration: 500,
+      easing: Easing.out(Easing.poly(4)),
+      timing: Animated.timing,
+      useNativeDriver: true
+    },
+    screenInterpolator: (sceneProps) => {
+      const { layout, position, scene } = sceneProps;
+      const width = layout.initWidth;
+      const { index, route } = scene;
+      const params = route.params || {};
+      const transition = params.transition || 'default';
+      return {
+        collapseExpand: CollapseExpand(index, position),
+        default: SlideFromRight(index, position, width)
+      }[transition]
+    }
+  }
+};
 
 const Routes = createBottomTabNavigator({
   Explore: {
@@ -93,8 +144,10 @@ const AuthStack = createStackNavigator(
       headerTintColor: '#fff',
       headerTitleStyle: {
         fontWeight: 'bold',
-      },
+      }
     },
+    mode: Platform.OS === 'ios' ? 'modal' : 'card',
+    transitionConfig: TransitionConfiguration
   }
 );
 
