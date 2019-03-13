@@ -17,10 +17,10 @@ import {
   theme
 } from '../../helpers/theme';
 
+import HeaderAction from '../../components/generic/headerAction';
+
 import {
   CloseButton,
-  SignInButton,
-  SignInButtonText,
   Logo,
   Greetings,
   CreateAccountOptions,
@@ -52,9 +52,7 @@ export default class SignIn extends Component {
         </CloseButton>
       ),
       headerRight: (
-        <SignInButton onPress={() => navigation.navigate('SignIn')} underlayColor={ theme.colors.secondaryColor }>
-          <SignInButtonText>Entrar</SignInButtonText>  
-        </SignInButton>
+        <HeaderAction label="Entrar" onPress={() => navigation.navigate('SignIn')} underlayColor={ theme.colors.secondaryColor } />
       ),
     }
   };

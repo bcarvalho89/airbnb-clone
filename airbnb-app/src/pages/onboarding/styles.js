@@ -6,16 +6,6 @@ const CloseButton = styled.TouchableHighlight`
   margin-left: ${ theme.spacings.defaultSpacing };
 `;
 
-const SignInButton = styled.TouchableHighlight`
-  margin-right: ${ theme.spacings.defaultSpacing };
-`;
-
-const SignInButtonText = styled.Text`
-  color: #fff;
-  font-size: 18;
-  font-weight: 400;
-`;
-
 const Logo = styled.Image`
   width: 50;
   height: 50;
@@ -60,8 +50,6 @@ const Disclaimer = styled.Text`
 
 export { 
   CloseButton,
-  SignInButton,
-  SignInButtonText,
   Logo,
   Greetings,
   CreateAccountOptions,

@@ -1,30 +1,26 @@
 import React, { Component } from 'react';
 
-import { AsyncStorage, Text, TouchableOpacity, ActivityIndicator, TextInput, TouchableWithoutFeedback } from 'react-native';
+import {
+  AsyncStorage,
+  ActivityIndicator
+} from 'react-native';
 
 import { NavigationActions } from 'react-navigation';
 import Snackbar from 'react-native-snackbar';
-
 import IconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 import { theme, Container, ContainerWrapper } from '../../helpers/theme';
 import { isValidMailFormat } from '../../helpers/validators';
 
-import  {
-  SignInTitle,
-  InputGroup,
-  InputLabel,
-  InputField,
-  InputGroupAction,
-  InputGroupActionText,
-  ButtonContinue
-} from './styles';
-
-import {
- SignInButton,
- SignInButtonText
-} from '../onboarding/styles'
+import HeaderAction from '../../components/generic/headerAction';
+import Input from '../../components/generic/input';
 
 import api from '../../services/api';
+
+import  {
+  SignInTitle,
+  ButtonContinue
+} from './styles';
 
 const goToApp = NavigationActions.navigate({
   routeName: 'Explore'
@@ -48,9 +44,7 @@ export default class SignIn extends Component {
   static navigationOptions = ({navigation}) => {
     return {
       headerRight: (
-        <SignInButton onPress={() => {}} underlayColor={ theme.colors.secondaryColor }>
-          <SignInButtonText>Esqueceu a senha?</SignInButtonText>  
-        </SignInButton>
+        <HeaderAction label="Esqueceu a senha?" onPress={() => { alert('Click'); }} underlayColor={ theme.colors.secondaryColor } />
       )
     }
   };
@@ -121,17 +115,22 @@ export default class SignIn extends Component {
       <Container backgroundColor={ theme.colors.secondaryColor }>
         <ContainerWrapper>
           <SignInTitle>Entrar</SignInTitle>
-          <InputGroup>
-            <InputLabel>ENDEREÇO DE EMAIL</InputLabel>
-            <InputField value={this.state.email} onChangeText={this.handleEmailChange} autoCapitalize="none" autoCorrect={false} />
-          </InputGroup>
-          <InputGroup>
-            <InputLabel>SENHA</InputLabel>
-            <InputGroupAction onPress={ this.togglePassword }>
-              <InputGroupActionText>{ this.state.hidePasswordText }</InputGroupActionText>
-            </InputGroupAction>
-            <InputField value={this.state.password} onChangeText={this.handlePasswordChange} autoCapitalize="none" autoCorrect={false} secureTextEntry={ this.state.hidePassword } />
-          </InputGroup>
+          <Input 
+            label="ENDEREÇO DE EMAIL"
+            value={this.state.email}
+            onChangeText={this.handleEmailChange}
+          />
+
+          <Input 
+            label="Senha"
+            value={this.state.password}
+            onChangeText={this.handlePasswordChange}
+            sideAction={true}
+            sideActionFn={ this.togglePassword }
+            sideActionLabel={ this.state.hidePasswordText }
+            secureTextEntry={ this.state.hidePassword }
+          />
+
           <ButtonContinue onPress={this.handleSignInPress} disabled={ this.state.disableContinue }>
             <IconMaterialIcons name="chevron-right" size={34} color={ theme.colors.secondaryColor } />
           </ButtonContinue>
