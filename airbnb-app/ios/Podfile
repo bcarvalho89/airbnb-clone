@@ -10,6 +10,10 @@ target 'AirbnbApp' do
   target 'AirbnbApp-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
+  #  pod 'RNSnackbar', :path => '../node_modules/react-native-snackbar'
+
+   # pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   end
 
   target 'AirbnbAppTests' do

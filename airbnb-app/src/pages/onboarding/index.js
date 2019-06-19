@@ -6,7 +6,7 @@ import {
   AsyncStorage,
   BackHandler,
   TouchableOpacity,
-  Platform
+  Platform,
 } from 'react-native';
 
 import IconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
