@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Button, AsyncStorage } from 'react-native';
 
-import { Container } from '../../helpers/theme';
+import { Container, Main } from '../../helpers/theme';
 
 class ProfileTab extends Component {
   constructor(props) {
@@ -17,9 +17,11 @@ class ProfileTab extends Component {
 
   render() {
     return (
-      <Container>
-        <Button title="Sair" onPress={this.logout} />
-      </Container>
+      <Main>
+        <Container>
+          <Button title="Sair" onPress={this.logout} />
+        </Container>
+      </Main>
     );
   }
 }

@@ -40,6 +40,7 @@ const ContainerCentered = styled.View`
 
 const Main = styled.SafeAreaView`
   backgroundColor: ${theme.colors.defaultBackgroundColor};
+  flex: 1;
 `;
 
 const PageTitle = styled.Text`

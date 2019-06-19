@@ -11,7 +11,7 @@ import {
 
 import IconEntypo from 'react-native-vector-icons/Entypo'
 
-import { Main } from '../../helpers/theme';
+import { Main, Container } from '../../helpers/theme';
 
 import Category from '../../components/explore/Category';
 import Property from '../../components/explore/Property';
@@ -83,8 +83,8 @@ class ExploreTab extends Component {
     const StyledAnimatedTagWrapper = Animated.createAnimatedComponent(TagWrapper);
 
     return (
-      <Main style={{ flex: 1}}>
-        <View style={{ flex: 1}}>
+      <Main>
+        <Container>
           <StyledAnimatedSearchHeader style={{height: this.animatedHeaderHeight}}>
             <SearchHeaderGroup>
               <SearchHeaderIcon name="ios-search" size={22} />
@@ -135,7 +135,7 @@ class ExploreTab extends Component {
               </PropertyList>
             </PropertyListWrapper>
           </ScrollView>
-        </View>
+        </Container>
       </Main>
     );
   }
