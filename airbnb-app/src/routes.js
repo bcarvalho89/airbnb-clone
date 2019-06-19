@@ -14,7 +14,8 @@ import ProfileTab from './pages/profile';
 
 import Onboarding from './pages/onboarding';
 import SignIn from './pages/signIn';
-import SignUp from './pages/signUp';
+import SignUpName from './pages/signUp/name';
+import SignUpEmail from './pages/signUp/email';
 import AuthLoading from './pages/authloading';
 
 const CollapseExpand = (index, position) => {
@@ -132,14 +133,16 @@ const Routes = createBottomTabNavigator({
 const AuthStack = createStackNavigator(
   {
     Onboarding: Onboarding,
-    SignIn: SignIn,
-    SignUp: SignUp
+    SignUpName: SignUpName,
+    SignUpEmail: SignUpEmail,
+    SignIn: SignIn
   },
   {
     navigationOptions: {
       headerStyle: {
         backgroundColor: theme.colors.secondaryColor,
-        elevation: 0
+        elevation: 0,
+        borderBottomColor: 'transparent'
       },
       headerTintColor: '#fff',
       headerTitleStyle: {

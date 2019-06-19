@@ -9,7 +9,7 @@ import { NavigationActions } from 'react-navigation';
 import Snackbar from 'react-native-snackbar';
 import IconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-import { theme, Container, ContainerWrapper } from '../../helpers/theme';
+import { theme, Container, ContainerWrapper, PageTitle } from '../../helpers/theme';
 import { isValidMailFormat } from '../../helpers/validators';
 
 import HeaderAction from '../../components/generic/headerAction';
@@ -18,7 +18,6 @@ import Input from '../../components/generic/input';
 import api from '../../services/api';
 
 import  {
-  SignInTitle,
   ButtonContinue
 } from './styles';
 
@@ -60,7 +59,7 @@ export default class SignIn extends Component {
   }
 
   handleCreateAccountPress = () => {
-    this.props.navigation.navigate('SignUp');
+    this.props.navigation.navigate('SignUpName');
   }
 
   togglePassword = () => {
@@ -98,7 +97,7 @@ export default class SignIn extends Component {
     } catch (err) {
       console.log('Error on login: ', err);
       Snackbar.show({
-        title: 'Houve um problema ao efetuar o login. Verifique os dados inseridos e tente novamente.',
+        title: 'Erro ao efetuar o login. Verifique os dados inseridos.',
         duration: Snackbar.LENGTH_INDEFINITE,
         action: {
           title: 'OK',
@@ -111,10 +110,10 @@ export default class SignIn extends Component {
   }
 
   render() {
-    return ( 
+    return (
       <Container backgroundColor={ theme.colors.secondaryColor }>
         <ContainerWrapper>
-          <SignInTitle>Entrar</SignInTitle>
+          <PageTitle>Entrar</PageTitle>
           <Input 
             label="ENDEREÇO DE EMAIL"
             value={this.state.email}
@@ -136,7 +135,7 @@ export default class SignIn extends Component {
           </ButtonContinue>
 
           { this.state.isLoading &&
-            <ActivityIndicator size="large" color="#FC6663"/>
+            <ActivityIndicator size="large" color={ theme.colors.activityIndicatorLight }/>
           }
         </ContainerWrapper>
       </Container>

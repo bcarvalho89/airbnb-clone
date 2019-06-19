@@ -29,11 +29,12 @@ const CreateAccountOptionsText = styled.Text`
   font-weight: 400
   text-align: center;
   border: 2px solid ${ props => props.color === 'light' ? theme.colors.secondaryColor :  '#fff' };
-  border-radius: 40;
+  border-radius: 25;
   paddingVertical: 10;
   color: ${ props => props.color === 'light' ? theme.colors.secondaryColor :  '#fff' };
   margin-bottom: 10;
   background-color: ${ props => props.color === 'light' ? '#fff' : theme.colors.secondaryColor };
+  overflow: hidden;
 `;
 
 const MoreOptions = styled.Text`

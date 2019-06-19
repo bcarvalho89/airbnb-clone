@@ -8,7 +8,8 @@ const theme = {
     inactiveTintColor: '#484848',
     textColor: '#484848',
     fullStarColor: '#008489',
-    defaultBackgroundColor: '#fff'
+    defaultBackgroundColor: '#fff',
+    activityIndicatorLight: '#fff'
   },
   borders: {
     defaultBorderRadius: 5
@@ -41,4 +42,11 @@ const Main = styled.SafeAreaView`
   backgroundColor: ${theme.colors.defaultBackgroundColor};
 `;
 
-export { theme, Container, ContainerCentered, ContainerWrapper, Main };
+const PageTitle = styled.Text`
+  color: #fff;
+  font-size: 30;
+  font-weight: bold;
+  margin-bottom: 40;
+`;
+
+export { theme, Container, ContainerCentered, ContainerWrapper, Main, PageTitle };

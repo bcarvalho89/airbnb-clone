@@ -75,7 +75,7 @@ export default class SignIn extends Component {
             <TouchableOpacity>
               <CreateAccountOptionsText color="light">Continuar com Facebook</CreateAccountOptionsText>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.push('SignUpName')}>
               <CreateAccountOptionsText>Criar uma conta</CreateAccountOptionsText>
             </TouchableOpacity>
           </CreateAccountOptions>
